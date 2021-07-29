@@ -1,0 +1,13 @@
+:root {
+    --tiny: 8px;
+    --small: 12px;
+    --medium: 14px;
+    --base: 16px;
+    --baseL: 18px;
+    --large: 20px;
+    --xlarge: 22px;
+}
+
+html {
+    font-size: var(--base);
+}
