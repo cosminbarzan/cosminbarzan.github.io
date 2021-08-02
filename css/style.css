@@ -9,7 +9,7 @@ header {
 
 main {
     background-color: var(--dark);
-    height: 1000px;
+    /* height: 1000px; */
     color: var(--light);
 }
 
@@ -40,18 +40,18 @@ body, html {
 }
 
 #transition1 {
-    /* height: 33%; */
+    height: 30em;
     text-align: center;
-    /* background-image: url("PROGRAMMER.jpg"); */
+    background-image: url("../images/PROGRAMMER.jpg");
 }
 
 #aboutMe {
-    height: 25%;
+    height: 20em;
     text-align: center;
 }
 
 #projects {
-    height: 25%;
+    height: 20em;
     text-align: center;
 }
 
@@ -136,4 +136,19 @@ h1 {
 
 html {
     scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.loading-animation {
+    display: flex;
+    justify-content: center;
 }
