@@ -7,6 +7,10 @@ header {
     padding: 20 20 20 20;
 }
 
+html {
+    box-sizing: border-box;
+}
+
 main {
     background-color: var(--dark);
     /* height: 1000px; */
@@ -48,11 +52,19 @@ body, html {
 #aboutMe {
     height: 20em;
     text-align: center;
+    padding: 3em 15em 0 15em;
+    font-size: var(--baseL);
 }
 
 #projects {
-    height: 20em;
+    /* height: 40em; */
+    min-height: 300vh;
     text-align: center;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
 }
 
 h1 {
@@ -151,4 +163,84 @@ main {
 .loading-animation {
     display: flex;
     justify-content: center;
+}
+
+
+.grid {
+    display: grid;
+    width: 20em;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    align-items: start;
+}
+
+.grid-item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.grid-item:hover {
+    transform: translateY(-0,5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    margin-left: 3.5rem;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.card-header {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    line-height: 1.5;
+    color: #3d3d3d;
+    max-width: 15rem;
+}
+
+.card-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #3363ff;
+    background-color: #d8e0fd;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.07rem;
+}
+
+.card-btn span {
+    margin-left: 1rem;
+    transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+    background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+    margin-left: 1rem;
 }
