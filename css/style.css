@@ -25,7 +25,7 @@ footer {
     color: #fff;;
 }
 body, html {
-    height: 100%;
+    min-height: 100%;
 }
 
 .navbar a {
@@ -58,7 +58,7 @@ body, html {
 
 #projects {
     /* height: 40em; */
-    min-height: 300vh;
+    min-height: 100vh;
     text-align: center;
     background-color: #eee;
     display: flex;
@@ -117,7 +117,7 @@ h1 {
 .footer-bottom {
     background: #000;
     /* width: 100%; */
-    height: 60px;
+    /* height: 60px; */
     padding: 20px 0;
     text-align: center;
 }
@@ -168,9 +168,9 @@ main {
 
 .grid {
     display: grid;
-    width: 20em;
-    grid-gap: 6rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    width: 66em;
+    grid-gap: 3em;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr)); /*repeat(3, 20em);*/
     align-items: start;
 }
 
@@ -181,10 +181,11 @@ main {
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: 0.2s;
+    position: relative;
 }
 
 .grid-item:hover {
-    transform: translateY(-0,5%);
+    transform: translateX(-1,5%);
     box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
 }
 
